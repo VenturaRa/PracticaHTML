@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="CSS/Hoja2_css.css" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Practica HTML</title>
 </head>
 <body>
-	<h3>HOJA2</h3>
-	<table align="center" border="4">
-		<caption>TABLA DE CAMISETAS</caption>
-		<tr>
-		    <th>Nombre</th>
-		    <th>Descripcion</th>
-		    <th>Numero de Serie</th>
-		    <th>Estado</th>
-		    <th>Prioridad</th>
-  		</tr>
-
-  		<tr>
-		    <td>Camiseta Futbol Barcelona</td>
-		    <td>La camiseta se compone de franjas verticales que combinan el azul y granate tradicionales con un azul más oscuro</td>
-		    <td>1</td>
-		    <td>activo</td>
-		    <td>alta</td>
-  		</tr>
-
-  		<tr>
-		    <td>Camiseta Futbol Levante</td>
-		    <td>Camiseta 100% algodón con cuello redondo y de lycra. Tejido tubular. Impresión digital</td>
-		    <td>2</td>
-		    <td>inactico</td>
-		    <td>alta</td>
-  		</tr>
-
-  		<tr>
-		    <td>Camiseta Futbol Elche</td>
-		    <td>La camiseta Nike Dri-FIT Park cuenta con un suave tejido con capilarización del sudor y con malla en la espalda para que mantengas la frescura y la transpirabilidad.</td>
-		    <td>3</td>
-		    <td>activo</td>
-		    <td>media</td>
-		</tr>
-	</table>
-	<footer><br>
-		<a href="\PracticaHTML\Hoja1.html">Hoja1</a>&nbsp;
-		<a href="\PracticaHTML\Hoja3.html">Hoja3</a>&nbsp;
-		<a href="\PracticaHTML\Hoja4.html">Hoja4</a>&nbsp;
-		<a href="\PracticaHTML\Hoja5.html">Hoja5</a>&nbsp;
-	</footer>
+	<ul id="cabecera">
+		<li class="boton-menu"><a class="menu" href="Hoja1.html">FORMULARIO</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu active" href="Hoja2.html">TABLA</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja3.html">BARCELONA</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja4.html">LEVANTE UD</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja5.html">ELCHE</a>&nbsp;</li>
+	</ul>
+	<div class="contenedor-pag">
+		<h3 id="titulo">HOJA2</h3>
+		<table align="center" border="4">
+			<caption>TABLA DE CLIENTES</caption>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Telefono</th>
+				<th>Email</th>
+				<th>Sexo</th>
+			</tr>
+			<tr>
+				<td>Juan</td>
+				<td>Sanchez Garcia</td>
+				<td>654456234</td>
+				<td>Juan@gmail.com</td>
+				<td>Hombre</td>
+			</tr>
+			<tr>
+				<td>Antonio</td>
+				<td>Rodriguez Arenas</td>
+				<td>687098123</td>
+				<td>Antonio@gmail.com</td>
+				<td>Hombre</td>
+			</tr>
+			<tr>
+				<td>Pedro</td>
+				<td>Lopez Fernandez</td>
+				<td>609123456</td>
+				<td>Pedro@gmail.com</td>
+				<td>Hombre</td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>

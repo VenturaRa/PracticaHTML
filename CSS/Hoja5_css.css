@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 16px 12px;
+    overflow: hidden;
+}
+
+
+
+#cabecera {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.menu{
+    margin: 0;
+    color: white;
+    padding: 16px 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;  
+}
+
+
+.boton-menu{
+    display: inline-block;
+    padding: 16px 0px;
+}
+
+    
+
+.menu:hover {
+    background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.contenedor-pag {
+    margin-left: 20px;
+}

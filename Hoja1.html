@@ -1,60 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="CSS/Hoja1_css.css" type="text/css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Practica HTML</title>
 </head>
 <body>
-	<h3>HOJA1</h3>
-	<h2>VENTA DE CAMISETAS</h2>
-	<form action="" method="post">
-	<fieldset>
-		<legend>	 
-		FORMULARIO
-		</legend>
-		<ul>
-			  <li>
-			    <label for="Nombre">Nombre:</label>
-			    <input type="text" id="Nombre" name="usuario_nombre">
-			  	</li>
-			  	<br>
-			  <li>
-			    <label for="Descripcion">Descripcion:</label>
-			    <input type="text" id="Descripcion" name="usuario_descripcion">
-			  	</li>
-			  	<br>
-			  <li>
-			    <label for="numero">Numero de serie:</label>
-			    <input type="numero" name="user_numero">
-			  	</li>
-			  	<br>
-			  	<li>
-			  		<label>Estado:<input type="checkbox" id="cbox1" value="first_checkbox">activo</label>
-			  		<label><input type="checkbox" id="cbox1" value="first_checkbox">inactivo</label><br>
-			  	</li>
-			  	<br>
-			  	<li>
-				  	<label>Prioridad:
-	            		<input type="radio" name="texto" value="alta"> Alta
-	        		</label>
-	        		<label>
-	            		<input type="radio" name="texto" value="media"> Media
-	        		</label>
-	        		<label>
-	            		<input type="radio" name="texto" value="baja"> Baja
-	        		</label>
-        		</li>
-			 </ul>
-			 <button type="submit">Enviar</button>
-			 <button type="reset">Borrar</button>
-	</fieldset>
-	</form>
-	<footer><br>
-		<a href="\PracticaHTML\Hoja2.html">Hoja2</a>&nbsp;
-		<a href="\PracticaHTML\Hoja3.html">Hoja3</a>&nbsp;
-		<a href="\PracticaHTML\Hoja4.html">Hoja4</a>&nbsp;
-		<a href="\PracticaHTML\Hoja5.html">Hoja5</a>&nbsp;
-	</footer>
+	<ul id="cabecera">
+		<li class="boton-menu"><a class="menu active" href="Hoja1.html">FORMULARIO</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja2.html">TABLA</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja3.html">BARCELONA</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja4.html">LEVANTE UD</a>&nbsp;</li>
+		<li class="boton-menu"><a class="menu" href="Hoja5.html">ELCHE</a>&nbsp;</li>
+	</ul> 
+	<div class="contenedor-pag">
+		<h3>HOJA1</h3>
+		<h2>VENTA DE CAMISETAS</h2>
+		<form action="" method="post">
+			<fieldset>
+				<legend>	 
+					FORMULARIO
+				</legend>
+				<ul>
+					<li>
+						<label for="Nombre">Nombre:</label>
+						<input class="input-form" type="text" id="Nombre" name="usuario_nombre">
+					</li>
+					<br>
+					<li>
+						<label for="Apellidos">Apellidos:</label>
+						<input class="input-form" type="text" id="Apellidos" name="usuario_apellidos">
+					</li>
+					<br>
+					<li>
+						<label for="Contraseña">Contraseña:</label>
+						<input class="input-form" type="text" id="Contraseña" name="usuario_contraseña">
+					</li>
+					<br>
+					<li>
+						<label for="Telefono">Telefono:</label>
+						<input class="input-form" type="text" id="Telefono" name="usuario_telefono">
+					</li>
+					<br>
+					<li>
+						<label for="Email">Email:</label>
+						<input class="input-form" type="text" id="Email" name="usuario_email">
+					</li>
+					<br>
+					<li>
+						<label>Sexo:
+							<input type="radio" name="texto" value="alta"> Hombre
+						</label>
+						<label>
+							<input type="radio" name="texto" value="media"> Mujer
+						</label>
+					</li>
+				</ul>
+				<button type="submit">Enviar</button>
+				<button id="Borrar" type="reset">Borrar</button>
+			</fieldset>
+		</form>
+	</div> 
 </body>
 </html>
