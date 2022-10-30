@@ -17,43 +17,43 @@
 	<div class="contenedor-pag">
 		<h3>HOJA1</h3>
 		<h2>VENTA DE CAMISETAS</h2>
-		<form action="" method="post">
+		<form action="./WS/crearUsuario.php" method="post">
 			<fieldset>
 				<legend>	 
 					FORMULARIO
 				</legend>
 				<ul>
 					<li>
-						<label for="Nombre">Nombre:</label>
+						<label for="Nombre" name="nombre">Nombre:</label>
 						<input class="input-form" type="text" id="Nombre" name="usuario_nombre">
 					</li>
 					<br>
 					<li>
-						<label for="Apellidos">Apellidos:</label>
+						<label for="Apellidos" name="apellidos">Apellidos:</label>
 						<input class="input-form" type="text" id="Apellidos" name="usuario_apellidos">
 					</li>
 					<br>
 					<li>
-						<label for="Contraseña">Contraseña:</label>
+						<label for="Contraseña" name="contraseña">Contraseña:</label>
 						<input class="input-form" type="text" id="Contraseña" name="usuario_contraseña">
 					</li>
 					<br>
 					<li>
-						<label for="Telefono">Telefono:</label>
+						<label for="Telefono" name="telefono">Telefono:</label>
 						<input class="input-form" type="text" id="Telefono" name="usuario_telefono">
 					</li>
 					<br>
 					<li>
-						<label for="Email">Email:</label>
+						<label for="Email" name="email">Email:</label>
 						<input class="input-form" type="text" id="Email" name="usuario_email">
 					</li>
 					<br>
 					<li>
-						<label>Sexo:
-							<input type="radio" name="texto" value="alta"> Hombre
+						<label name="sexo">Sexo:
+							<input type="radio" name="usuario_sexo" value="Hombre"> Hombre
 						</label>
 						<label>
-							<input type="radio" name="texto" value="media"> Mujer
+							<input type="radio" name="usuario_sexo" value="Mujer"> Mujer
 						</label>
 					</li>
 				</ul>
