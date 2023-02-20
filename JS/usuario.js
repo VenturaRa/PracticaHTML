@@ -71,7 +71,7 @@ window.onload =
 			    row.appendChild(column);
 
 			    column = document.createElement('td');
-			    column.innerHTML = '<button type="button" id="eliminar" onclick="eliminar('+i+')">'+btneliminar+'</button>';
+			    column.innerHTML = '<button type="button" id="eliminar" onclick="eliminar('+i+')">'+btneliminar+'</button><button type="button" id="modificar" onclick="modificar('+i+')">Editar</button>';
 			    row.appendChild(column);
 	}
     
@@ -104,5 +104,21 @@ function buscador(){
         tr[i].style.display = display;
     }
     input.addEventListener('keyup', buscador);
-}	
+
+}
+function modificar(id){
+    let tabla = document.getElementById('id_tbody');
+    for (i = 0; i < 5; i++) {
+      let celdaTmp = tabla.rows[id].cells[i];
+      txt = celdaTmp.innerText;
+      celdaTmp.innerText = "";
+      let input = document.createElement('input');
+      input.setAttribute("value", txt);
+      celdaTmp.appendChild(input);
+      
+    } 
+    }	
+    
+  
 buscador();
+window.onload = insertar();
